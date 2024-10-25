@@ -1,5 +1,3 @@
-console.log("JS OK");
-
 //# Snack 2
 //* Creare un array di oggetti di squadre di calcio.
 //
@@ -12,28 +10,40 @@ console.log("JS OK");
 
 const squadre = [
   {
-    nome: "A",
+    nome: "Squadra A",
     punti: 0,
     falli: 0,
   },
   {
-    nome: "B",
+    nome: "Squadra B",
     punti: 0,
     falli: 0,
   },
   {
-    nome: "C",
+    nome: "Squadra C",
     punti: 0,
     falli: 0,
   },
   {
-    nome: "D",
+    nome: "Squadra D",
     punti: 0,
     falli: 0,
   },
   {
-    nome: "E",
+    nome: "Squadra E",
     punti: 0,
     falli: 0,
   },
 ];
+
+squadre.forEach((squadra) => {
+  squadra.punti = Math.floor(Math.random() * 21);
+  squadra.falli = Math.floor(Math.random() * 11);
+});
+console.log(squadre);
+
+const newArrSquadre = squadre.map((squadra) => {
+  return { nome: squadra.nome, falli: squadra.falli };
+});
+
+console.log(newArrSquadre);
