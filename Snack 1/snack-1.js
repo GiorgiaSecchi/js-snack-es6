@@ -7,26 +7,38 @@
 // ***********************************************************************************************/
 
 const racingBike = [
-  (bike1 = {
+  {
     name: "Ciclocross",
     weight: 9,
-  }),
-  (bike2 = {
+  },
+  {
     name: "Ebike",
     weight: 12,
-  }),
-  (bike3 = {
+  },
+  {
     name: "Gravel",
     weight: 10,
-  }),
-  (bike3 = {
+  },
+  {
     name: "Endurance",
     weight: 8,
-  }),
-  (bike4 = {
+  },
+  {
     name: "Aeroad",
     weight: 7,
-  }),
+  },
 ];
 
-console.log(racingBike[4]);
+// console.log(racingBike[4]);
+
+let lightweight = racingBike[0];
+
+racingBike.forEach((bike) => {
+  if (bike.weight < lightweight.weight) {
+    lightweight = bike;
+  }
+});
+
+console.log(
+  `Bici più leggera: ${lightweight.name} ha un peso di ${lightweight.weight} kg`
+);
