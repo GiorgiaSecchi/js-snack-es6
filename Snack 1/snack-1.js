@@ -9,7 +9,7 @@
 const racingBike = [
   (bike1 = {
     name: "Ciclocross",
-    weight: 7,
+    weight: 9,
   }),
   (bike2 = {
     name: "Ebike",
@@ -25,8 +25,8 @@ const racingBike = [
   }),
   (bike4 = {
     name: "Aeroad",
-    weight: 9,
+    weight: 7,
   }),
 ];
 
-console.log(racingBike);
+console.log(racingBike[4]);
