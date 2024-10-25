@@ -9,3 +9,31 @@ console.log("JS OK");
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 // ***********************************************************************************************/
+
+const squadre = [
+  {
+    nome: "A",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "B",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "C",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "D",
+    punti: 0,
+    falli: 0,
+  },
+  {
+    nome: "E",
+    punti: 0,
+    falli: 0,
+  },
+];
