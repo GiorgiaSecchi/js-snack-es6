@@ -36,12 +36,14 @@ const squadre = [
   },
 ];
 
+// per ogni "squadra" all'interno genero numeri casuali per le proprietà punti e falli
 squadre.forEach((squadra) => {
   squadra.punti = Math.floor(Math.random() * 21);
   squadra.falli = Math.floor(Math.random() * 11);
 });
 console.log(squadre);
 
+//creo nuovo array squadre che restituisca solo le due proprietà
 const newArrSquadre = squadre.map((squadra) => {
   return { nome: squadra.nome, falli: squadra.falli };
 });
